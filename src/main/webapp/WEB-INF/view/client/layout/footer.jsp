@@ -7,10 +7,10 @@
                     <div class="d-flex flex-column text-start footer-item">
                         <h4 class="text-white mb-3">Về trung tâm</h4>
                         <a class="btn-link text-white" href="/doi-ngu-giang-vien">Đội ngũ giảng viên</a>
-                        <a class="btn-link text-white" href="">Học viên tiêu biểu</a>
+                        <a class="btn-link text-white" href="hoc-vien">Học viên tiêu biểu</a>
                         <a class="btn-link text-white" href="/khoa-hoc-ielts">Khóa học IELTS</a>
                         <a class="btn-link text-white" href="ta-giao-tiep">Khóa học giao tiếp</a>
-                        <a class="btn-link text-white" href="">Tự học IELTS</a>
+                        <a class="btn-link text-white" href="luyen-thi-ielts">Tự học IELTS</a>
 
                     </div>
                 </div>

@@ -1,0 +1,111 @@
+
+/* tiếng anh người đi làm  */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0f4f8;
+}
+
+.navbar {
+    background-color: #007bff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.img {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+}
+
+
+
+.navbar .logo {
+    font-size: 1.6em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.justified {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5;
+}
+
+.container {
+    text-align: justify;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    color: #1a3c6e;
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #0a0e12;
+    font-size: 1.6em;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #000;
+    /* Viền đen */
+    padding: 10px;
+    /* Khoảng cách bên trong ô */
+    text-align: left;
+    /* Căn trái văn bản */
+    vertical-align: top;
+    /* Căn trên cùng */
+}
+
+th {
+    font-weight: bold;
+    /* In đậm tiêu đề */
+}

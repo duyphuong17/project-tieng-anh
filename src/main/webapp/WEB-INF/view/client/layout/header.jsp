@@ -115,9 +115,8 @@
                                 <div class="dropdown1">
                                     <a href="#" class="dropdown-toggle">Học viên </a>
                                     <ul class="dropdown-menu1">
-                                        <li><a href="#">Học viên tiêu biểu</a></li>
-                                        <hr>
-                                        <li><a href="#">Cảm nhận học viên</a></li>
+                                        <li><a href="/hoc-vien">Học viên tiêu biểu</a></li>
+                                        
                                     </ul>
                                 </div>
                                 <div class="dropdown1">
@@ -125,7 +124,7 @@
                                     <ul class="dropdown-menu1">
                                         <li><a href="/mua-khoa-hoc">Mua khóa học</a></li>
                                         <hr>
-                                        <li><a href="/ta-giao-tiep">Tiếng Anh giao tiếp</a></li>
+                                        <li><a href="/khoa-hoc-tieng-anh-giao-tiep">Tiếng Anh giao tiếp</a></li>
                                         <hr>
                                         <li><a href="/khoa-hoc-ielts">Khóa học IELTS</a></li>
                                         
@@ -134,11 +133,11 @@
                                 <div class="dropdown1">
                                     <a href="#" class="dropdown-toggle">Blog tiếng Anh </a>
                                     <ul class="dropdown-menu1">
-                                        <li><a href="#">Tiếng Anh giao tiếp</a></li>
+                                        <li><a href="tieng-anh-giao-tiep">Tiếng Anh giao tiếp</a></li>
                                         <hr>
-                                        <li><a href="#">Tiếng Anh cho người đi làm</a></li>
+                                        <li><a href="tieng-anh-nguoi-di-lam">Tiếng Anh cho người đi làm</a></li>
                                         <hr>
-                                        <li><a href="#">Luyện thi IELTS</a></li>
+                                        <li><a href="/luyen-thi-ielts">Luyện thi IELTS</a></li>
                                     </ul>
                                 </div>
                                 <a class="custom-link" href="/lien-he">Thông tin liên hệ</a>

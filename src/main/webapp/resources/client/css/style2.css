@@ -1,0 +1,342 @@
+/* Header */
+
+.header-bg {
+    background-color: #1e3a8a;
+    /* Dark blue header background */
+}
+
+
+/* Button Animation */
+
+.btn-primary {
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary:active {
+    transform: scale(0.95);
+}
+
+
+/* Secondary Button Animation (for View More and Connect Teachers) */
+
+.btn-secondary {
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    transform: scale(1.05);
+}
+
+.btn-secondary:active {
+    transform: scale(0.95);
+}
+
+
+/* Feature Card Animation */
+
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Parallax Effect */
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://via.placeholder.com/1920x1080?text=Parallax+Background');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.parallax>* {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Hover Zoom for Images */
+
+.hover-zoom {
+    transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+
+/* Slide-in Animation (initial state) */
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+
+/* Fade-in Animation (initial state) */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+
+/* Progress Bar */
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #f97316;
+    /* Orange color */
+    z-index: 20;
+}
+
+
+/* Modal Styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+
+/* Close Button */
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close:hover {
+    color: #ef4444;
+    /* Red-500 */
+}
+
+
+/* Form Input Styles */
+
+.modal-content input,
+.modal-content textarea {
+    border-color: #d1d5db;
+    /* Gray-300 */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+    border-color: #3b82f6;
+    /* Blue-500 */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+
+/* Error Message Styles */
+
+.error {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+    font-weight: 500;
+}
+
+
+/* Success Notification Styles */
+
+#successAlert {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    min-width: 250px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#successAlert.show {
+    opacity: 1;
+}
+
+
+/* Counter Animation Styling */
+
+.counter {
+    transition: all 0.01s ease-out;
+}
+
+
+/* Teachers Section Animation */
+
+.teacher-grid {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.teacher-grid.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Courses Section Styles */
+
+.course-tab {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.course-tab.active {
+    background-color: #2dd4bf;
+    /* Teal-500 */
+    transform: scale(1.05);
+}
+
+.course-panel {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.course-panel.active {
+    display: block;
+    opacity: 1;
+}
+
+.course-panel-inner {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    /* Adjusted for responsive */
+    height: 200px;
+    /* Fixed height for all panels */
+    box-sizing: border-box;
+}
+
+.course-text {
+    width: 60%;
+    /* Allocate 60% for text on desktop */
+    padding-right: 10px;
+}
+
+.course-image {
+    width: 192px;
+    /* Fixed width for image (same as w-48) */
+    height: 192px;
+    /* Fixed height for image (same as h-48) */
+    object-fit: cover;
+    /* Ensure image covers the area without distortion */
+}
+
+
+/* Students Section Styles */
+
+.student-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive Adjustments for Courses Section */
+
+@media (max-width: 768px) {
+    .course-panel-inner {
+        height: auto;
+        /* Allow height to adjust on smaller screens */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .course-text {
+        width: 100%;
+        /* Full width on mobile */
+        padding-right: 0;
+        text-align: center;
+    }
+    .course-image {
+        position: static;
+        /* Remove absolute positioning */
+        width: 100%;
+        /* Full width on mobile */
+        max-width: 192px;
+        /* Keep max width */
+        height: 192px;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        /* Adjust border radius */
+    }
+}
+
+
+/* General Styling */
+
+body {
+    overflow-x: hidden;
+}

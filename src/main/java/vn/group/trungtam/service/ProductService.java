@@ -40,17 +40,17 @@ public class ProductService {
         this.orderDetailRepository = orderDetailRepository;
     }
 
-    // Tạo mới một sản phẩm và lưu vào database
+
     public Product createProduct(Product pr) {
         return this.productRepository.save(pr);
     }
 
-    // Lấy danh sách tất cả sản phẩm từ database
+  
     public List<Product> fetchProducts() {
         return this.productRepository.findAll();
     }
 
-    // Lấy một sản phẩm theo ID (nếu có) từ database
+
     public Optional<Product> fetchProductById(long id) {
         return this.productRepository.findById(id);
     }

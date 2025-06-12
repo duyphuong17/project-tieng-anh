@@ -71,23 +71,23 @@ public class HomePageController {
     }
 
      @GetMapping("/doi-ngu-giang-vien")
-    public String getGiangVien(Model model) {
+    public String getGiangVien() {
         return "client/homepage/giangvien";
     }
      @GetMapping("/lien-he")
-    public String getLienHe(Model model) {
+    public String getLienHe() {
         return "client/homepage/lienhe";
     }
      @GetMapping("/khoa-hoc-ielts")
-    public String getKhoaHocIelts(Model model) {
+    public String getKhoaHocIelts() {
         return "client/homepage/khoahocielts";
     }
-     @GetMapping("/ta-giao-tiep")
-    public String getTaGiaoTiep(Model model) {
-        return "client/homepage/tagiaotiep";
+     @GetMapping("/khoa-hoc-tieng-anh-giao-tiep")
+    public String getKHTaGiaoTiep() {
+        return "client/homepage/khoahoctienganhgiaotiep";
     }
     @GetMapping("/hoi-dap")
-    public String getHoidap(Model model) {
+    public String getHoidap() {
         return "client/homepage/hoidap";
     }
      @GetMapping("/mua-khoa-hoc")
@@ -95,5 +95,53 @@ public class HomePageController {
          List<Product> products = this.productService.fetchProducts();
         model.addAttribute("products", products);
         return "client/homepage/muakhoahoc";
+    }
+    @GetMapping("/luyen-thi-ielts")
+    public String getLuyenThiIelts() {    
+        return "client/homepage/luyenthiielts";
+    }
+    @GetMapping("/tieng-anh-giao-tiep")
+    public String getTiengAnhGiaoTieo() {    
+        return "client/homepage/tienganhgiaotiep";
+    }
+    @GetMapping("/tieng-anh-nguoi-di-lam")
+    public String getTiengAnhNguoiDilam() {    
+        return "client/homepage/tienganhnguoidilam";
+    }
+     @GetMapping("/tieng-anh-nguoi-di-lam-1")
+    public String getTiengAnhNguoiDilam1() {    
+        return "client/homepage/tienganhnguoidilam1";
+    }
+     @GetMapping("/tieng-anh-nguoi-di-lam-2")
+    public String getTiengAnhNguoiDilam2() {    
+        return "client/homepage/tienganhnguoidilam2";
+    }
+    @GetMapping("/tieng-anh-giao-tiep-1")
+    public String getTiengAnhGiaoTiep1() {    
+        return "client/homepage/tienganhgiaotiep1";
+    }
+    @GetMapping("/tieng-anh-giao-tiep-2")
+    public String getTiengAnhGiaoTiep2() {    
+        return "client/homepage/tienganhgiaotiep2";
+    }
+    @GetMapping("/luyen-thi-ielts-1")
+    public String getLuyenThiIelts1() {    
+        return "client/homepage/luyenthiielts1";
+    }
+    @GetMapping("/luyen-thi-ielts-2")
+    public String getLuyenThiIelts2() {    
+        return "client/homepage/luyenthiielts2";
+    }
+    @GetMapping("/advise")
+    public String getAdivse() {    
+        return "client/homepage/advise";
+    }
+     @GetMapping("/cau-truc")
+    public String getCautruc() {    
+        return "client/homepage/cautruc";
+    }
+      @GetMapping("/hoc-vien")
+    public String getHocVien() {    
+        return "client/homepage/hocvien";
     }
 }

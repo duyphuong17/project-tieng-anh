@@ -1,0 +1,126 @@
+/* General Styles */
+
+body {
+    overflow-x: hidden;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.student-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.5s ease-in-out;
+}
+
+.student-card.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.student-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    z-index: 0;
+    animation: sparkle 5s linear infinite;
+}
+
+.student-card:hover::before {
+    animation: sparkleHover 2s linear infinite;
+}
+
+.student-card>* {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes sparkle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sparkleHover {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0.5;
+    }
+}
+
+.student-card img {
+    transition: transform 0.5s ease;
+}
+
+.student-card:hover img {
+    transform: scale(1.1);
+}
+
+.student-card .flex svg {
+    transition: transform 0.3s ease;
+}
+
+.student-card:hover .flex svg {
+    transform: scale(1.2);
+}
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .student-card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* Header Styles */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+/* Mobile Menu */
+
+#mobileMenu {
+    display: none;
+}
+
+#mobileMenu.active {
+    display: block;
+}

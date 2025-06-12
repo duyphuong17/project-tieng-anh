@@ -64,7 +64,7 @@ public class SecurityConfiguration {
                                 DispatcherType.INCLUDE)
                         .permitAll()
 
-                        .requestMatchers("/", "/login", "/product/**","/register", "/client/**", "/css/**","/doi-ngu-giang-vien", "/mua-khoa-hoc","/khoa-hoc-ielts","/ta-giao-tiep","/lien-he","/hoi-dap","/js/**", "/images/**")
+                        .requestMatchers("/", "/login", "/product/**","/register", "/client/**", "/css/**","/doi-ngu-giang-vien", "/mua-khoa-hoc","/khoa-hoc-ielts","/khoa-hoc-tieng-anh-giao-tiep","/lien-he","/hoi-dap","/luyen-thi-ielts","/luyen-thi-ielts-1","/luyen-thi-ielts-2","/tieng-anh-giao-tiep","/tieng-anh-giao-tiep-1","/tieng-anh-giao-tiep-2","/tieng-anh-nguoi-di-lam","/tieng-anh-nguoi-di-lam-1","/tieng-anh-nguoi-di-lam-2","cau-truc","hoc-vien","advise","/js/**", "/images/**")
                         .permitAll()
 
                         .requestMatchers("/admin/**").hasRole("ADMIN")

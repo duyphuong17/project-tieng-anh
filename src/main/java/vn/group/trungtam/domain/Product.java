@@ -34,7 +34,7 @@ public class Product {
     private String detailDesc;
 
     @NotNull
-    @NotEmpty(message = "detailDesc không được trống")
+    @NotEmpty(message = "shortDesc không được trống")
     private String shortDesc;
 
     @NotNull
