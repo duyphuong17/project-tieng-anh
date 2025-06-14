@@ -1,6 +1,6 @@
-# 🌐 Website Quản Lý Trung Tâm Tiếng Anh – Backend
+# 🌐 Website Quản Lý Trung Tâm Tiếng Anh 
 
-Đây là mã nguồn backend của hệ thống quản lý trung tâm tiếng Anh, được xây dựng bằng Java Spring Boot. Dự án xử lý các chức năng như quản lý học viên, khóa học, đơn mua khóa học,và đăng ký đăng nhập học viên.
+Đây là mã nguồn của hệ thống trung tâm tiếng Anh, được xây dựng bằng Java Spring Boot. Dự án xử lý các chức năng như quản lý học viên, khóa học, đơn mua khóa học,và đăng ký đăng nhập học viên.
 
 ---
 
@@ -12,9 +12,9 @@
 
 ---
 
-## 🚀 CẤU HÌNH CHẠY ỨNG DỤNG
+##  CẤU HÌNH CHẠY ỨNG DỤNG
 
-### 🧱 Công nghệ sử dụng
+###  Công nghệ sử dụng
 
 | Thành phần        | Phiên bản          |
 |-------------------|--------------------|
